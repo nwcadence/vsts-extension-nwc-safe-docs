@@ -1,4 +1,6 @@
 #NWC SAFe Extension Documentation
+![NWC Logo](images/logo.png)
+
 This document explains the configuration and use of NWC SAFe Extensions for VSTS.
 
 The extension contains the following customizations:
