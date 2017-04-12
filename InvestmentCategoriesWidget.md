@@ -19,14 +19,18 @@ To configure the extension, you require a new custom field to store the list of 
     6. For the type of Field, select `Picklist (string)`. Optionally, provide a description for the field.
     7. Press "Add value" button to add new values for the picklist. This is the list of investment categories you wish your users to assign to Features.
     8. Configure the Options and Layout for the field. When you are done, press "Add field". Ensure that you don't "Allow users to enter their own values" i the Options page.
-1. Configure Investment Categories per Iteration
+1. Configure Investment Categories per Product Increment
+    You should configure Product Increments for your iterations. That is, you should have an iteration tree something like this:
+    ![Product Increments](images/productIncrements.png)
+    The investment categories must be configured at the Product Increment level (that is the 1st level of iteration nodes, shown with a red border in the image above).
+
     ![Configure the Categories](images/configureCats.png)
     1. Browse to a Team Project that is on the Custom template
     2. Click on the Settings icon to open the Project settings
     3. Click on the Work Settings hub
     4. **VSTS Limitation workaround:** Due to a limitation in work item customization in VSTS, you will need to re-enter the list of Investment Categories that you added to the picklist for the field earlier. _Soon this step will not be required._
-    5. A tab appears for each iteration that you have. Click on an iteration.
-    6. A slider appears for each category for the selected iteration. Adjust the values for that iteration and click Save. Ensure that the total adds up to 100. Repeat this step for each iteration.
+    5. A tab appears for each Product Increment that you have. Click on a Product Increment.
+    6. A slider appears for each category for the selected Product Increment. Adjust the values for that Product Increment and click Save. Ensure that the total adds up to 100. Repeat this step for each Product Increment.
 1. Configure a Feature Work Item Query
 
     To see how requirements are tracking against investment category, you need to configure a query that returns the requirement-level items (User Story, PBI or Requirement for Agile, Scrum and CMMI templates respectively). The query also needs to show all the parent Feature-level items. The reason the query is child-to-parent is so that orphaned requirements can "sum" to a `None` category. The query can of course filter work items to a particular area or anything you need, but it must have the child-parent items.
@@ -52,7 +56,7 @@ To configure the extension, you require a new custom field to store the list of 
     ![Configure the Widget](images/configureWidget.png)
     1. Edit the title
     2. **Either:** Select a query to show actual values,
-    3. **Or:** Select an iteration to show the target values
+    3. **Or:** Select a Product Increment to show the target values
     4. Click save to save the changes
 
 > **Hint:** To be able to compare actuals to targets, configure two widgets side-by-side. Configure the first to show the Increment (target) values. Then configure the second to show actuals (configure it tied to a query).
