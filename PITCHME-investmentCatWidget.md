@@ -14,14 +14,14 @@ To configure the extension, you require a new custom field to store the list of 
 
 +++
 
-##### Add a Custom Field to the Feature Work Item
+##### Add a Custom Field to the Feature Work Item2
 
-    ![Add a Custom Investment Category Field](images/addInvestmentCat.png)
+![Add a Custom Investment Category Field](images/addInvestmentCat.png)
 
-    1. Browse to the Process tab on the account settings page of your account
-    2. Select your custom inherited template from the list of templates
-    3. Expand the settings for the Feature Work Item and Click on `Layout`
-    4. Click on `New field`
+1. Browse to the Process tab on the account settings page of your account
+2. Select your custom inherited template from the list of templates
+3. Expand the settings for the Feature Work Item and Click on `Layout`
+4. Click on `New field`
 
 +++
 
