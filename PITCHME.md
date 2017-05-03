@@ -9,8 +9,8 @@ This presentation explains the configuration and use of NWC SAFe Extensions for 
 ### Extension List
 
 The extension contains the following customizations:
-1. [Investment Categories Widget](PITCHME-ivestmentCatWidget.md)
-1. Weighted Shortest Job First (WSJF)
+1. [Investment Categories Widget](PITCHME-investmentCatWidget.md)
+1. [Weighted Shortest Job First (WSJF)](PITCHME-sjf.md)
 
 ---?include=PITCHME-investmentCatWidget.md
 
