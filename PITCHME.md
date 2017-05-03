@@ -1,12 +1,12 @@
-## NWC SAFe Extensions
+### NWC SAFe Extensions
 
-![NWC Logo](images/logo.png)
+![NWC Logo](assets/logo.png)
 
 This presentation explains the configuration and use of NWC SAFe Extensions for VSTS.
 
 ---
 
-### Extension List
+##### Extension List2
 
 The extension contains the following customizations:
 1. [Investment Categories Widget](PITCHME-investmentCatWidget.md)

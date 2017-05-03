@@ -1,6 +1,6 @@
 ### Investment Categories Widget
 
-![Investment Categories](images/investmentCatWidget.png)
+![Investment Categories](assets/investmentCatWidget.png)
 
 The Investment Categories field allows you to track progress of Requirements in an arbitrary Work Item Query against Investment Category goals.
 
@@ -16,7 +16,7 @@ To configure the extension, you require a new custom field to store the list of 
 
 ##### Add a Custom Field to the Feature Work Item2
 
-![Add a Custom Investment Category Field](images/addInvestmentCat.png)
+![Add a Custom Investment Category Field](assets/addInvestmentCat.png)
 
 1. Browse to the Process tab on the account settings page of your account
 2. Select your custom inherited template from the list of templates
@@ -25,7 +25,7 @@ To configure the extension, you require a new custom field to store the list of 
 
 +++
 
-    ![Add a Custom Investment Category Field](images/addInvestmentCat.png)
+    ![Add a Custom Investment Category Field](assets/addInvestmentCat.png)
 
     5. In the dialog, under the "Create a field" section, enter a name for the new field (for example, `investmentCategory`). This name will be used when querying Work Items.
     6. For the type of Field, select `Picklist (string)`. Optionally, provide a description for the field.
@@ -38,13 +38,13 @@ To configure the extension, you require a new custom field to store the list of 
 
     You should configure Product Increments for your iterations. That is, you should have an iteration tree something like this:
 
-    ![Product Increments](images/productIncrements.png)
+    ![Product Increments](assets/productIncrements.png)
 
     The investment categories must be configured at the Product Increment level (that is the 1st level of iteration nodes, shown with a red border in the image above).
 
 +++
 
-    ![Configure the Categories](images/configureCats.png)
+    ![Configure the Categories](assets/configureCats.png)
 
     1. Browse to a Team Project that is on the Custom template
     2. Click on the Settings icon to open the Project settings
@@ -61,7 +61,7 @@ To configure the extension, you require a new custom field to store the list of 
 
 +++
 
-    ![Configure the Categories](images/configureQuery.png)
+    ![Configure the Categories](assets/configureQuery.png)
 
     1. Browse to the Work Hub for your Team Project
     2. Click on Queries
@@ -72,7 +72,7 @@ To configure the extension, you require a new custom field to store the list of 
 
 +++
 
-    ![Configure the Categories](images/configureQuery.png)
+    ![Configure the Categories](assets/configureQuery.png)
 
     7. Edit the linked work items query to `Work Item Type = Feature` to return the parent items. These items are the items that have the Invesement Category field.
     8. Change the Filter Options value to `Return all top level items`
@@ -85,13 +85,13 @@ To configure the extension, you require a new custom field to store the list of 
 
     Edit a dashboard and add a new SAFe Investment Category Widget
 
-    ![Add a SAFe Investment Category Widget](images/addWidget.png)
+    ![Add a SAFe Investment Category Widget](assets/addWidget.png)
     
 +++ 
 
 ##### Click the wrench icon on the widget to configure it
     
-    ![Configure the Widget](images/configureWidget.png)
+    ![Configure the Widget](assets/configureWidget.png)
     
     1. Edit the title
     2. **Either:** Select a query to show actual values,
