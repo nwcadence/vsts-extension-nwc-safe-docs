@@ -14,7 +14,7 @@ To configure the extension, you require a new custom field to store the list of 
 
 +++
 
-##### Add a Custom Field to the Feature Work Item2
+##### Add a Custom Field to the Feature Work Item
 
 ![Add a Custom Investment Category Field](assets/addInvestmentCat.png)
 

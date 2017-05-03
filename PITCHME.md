@@ -6,7 +6,7 @@ This presentation explains the configuration and use of NWC SAFe Extensions for 
 
 ---
 
-##### Extension List2
+##### Extension List
 
 The extension contains the following customizations:
 1. [Investment Categories Widget](PITCHME-investmentCatWidget.md)
