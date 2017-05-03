@@ -7,6 +7,7 @@ The Investment Categories field allows you to track progress of Requirements in 
 +++
 
 ## Configuration
+
 To configure the extension, you require a new custom field to store the list of investment categories. Custom Fields can only be added to inherited process templates.
 
 > If you do not have a custom process template, create one by following [these instructions](https://www.visualstudio.com/en-us/docs/work/process/manage-process#create-an-inherited-process).
@@ -14,7 +15,9 @@ To configure the extension, you require a new custom field to store the list of 
 +++
 
 ### Add a Custom Field to the Feature Work Item
+
     ![Add a Custom Investment Category Field](images/addInvestmentCat.png)
+
     1. Browse to the Process tab on the account settings page of your account
     2. Select your custom inherited template from the list of templates
     3. Expand the settings for the Feature Work Item and Click on `Layout`
@@ -27,11 +30,15 @@ To configure the extension, you require a new custom field to store the list of 
 +++
 
 ### Configure Investment Categories per Product Increment
+
     You should configure Product Increments for your iterations. That is, you should have an iteration tree something like this:
+
     ![Product Increments](images/productIncrements.png)
+
     The investment categories must be configured at the Product Increment level (that is the 1st level of iteration nodes, shown with a red border in the image above).
 
     ![Configure the Categories](images/configureCats.png)
+
     1. Browse to a Team Project that is on the Custom template
     2. Click on the Settings icon to open the Project settings
     3. Click on the Work Settings hub
@@ -45,7 +52,9 @@ To configure the extension, you require a new custom field to store the list of 
     To see how requirements are tracking against investment category, you need to configure a query that returns the requirement-level items (User Story, PBI or Requirement for Agile, Scrum and CMMI templates respectively). The query also needs to show all the parent Feature-level items. The reason the query is child-to-parent is so that orphaned requirements can "sum" to a `None` category. The query can of course filter work items to a particular area or anything you need, but it must have the child-parent items.
 
 +++
+
     ![Configure the Categories](images/configureQuery.png)
+
     1. Browse to the Work Hub for your Team Project
     2. Click on Queries
     3. Click New->New Query to create a new query.
@@ -60,14 +69,17 @@ To configure the extension, you require a new custom field to store the list of 
 +++
 
 ## Usage
-### Edit a dashboard and add a new SAFe Investment Category Widget
+
+    Edit a dashboard and add a new SAFe Investment Category Widget
 
     ![Add a SAFe Investment Category Widget](images/addWidget.png)
     
 +++ 
 
 ### Click the wrench icon on the widget to configure it
+    
     ![Configure the Widget](images/configureWidget.png)
+    
     1. Edit the title
     2. **Either:** Select a query to show actual values,
     3. **Or:** Select a Product Increment to show the target values
