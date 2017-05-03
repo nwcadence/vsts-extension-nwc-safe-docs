@@ -1,4 +1,4 @@
-## Investment Categories Widget
+### Investment Categories Widget
 
 ![Investment Categories](images/investmentCatWidget.png)
 
@@ -6,7 +6,7 @@ The Investment Categories field allows you to track progress of Requirements in 
 
 +++
 
-## Configuration
+#### Configuration
 
 To configure the extension, you require a new custom field to store the list of investment categories. Custom Fields can only be added to inherited process templates.
 
@@ -14,7 +14,7 @@ To configure the extension, you require a new custom field to store the list of 
 
 +++
 
-### Add a Custom Field to the Feature Work Item
+##### Add a Custom Field to the Feature Work Item
 
     ![Add a Custom Investment Category Field](images/addInvestmentCat.png)
 
@@ -22,6 +22,11 @@ To configure the extension, you require a new custom field to store the list of 
     2. Select your custom inherited template from the list of templates
     3. Expand the settings for the Feature Work Item and Click on `Layout`
     4. Click on `New field`
+
++++
+
+    ![Add a Custom Investment Category Field](images/addInvestmentCat.png)
+
     5. In the dialog, under the "Create a field" section, enter a name for the new field (for example, `investmentCategory`). This name will be used when querying Work Items.
     6. For the type of Field, select `Picklist (string)`. Optionally, provide a description for the field.
     7. Press "Add value" button to add new values for the picklist. This is the list of investment categories you wish your users to assign to Features.
@@ -29,13 +34,15 @@ To configure the extension, you require a new custom field to store the list of 
 
 +++
 
-### Configure Investment Categories per Product Increment
+##### Configure Investment Categories per Product Increment
 
     You should configure Product Increments for your iterations. That is, you should have an iteration tree something like this:
 
     ![Product Increments](images/productIncrements.png)
 
     The investment categories must be configured at the Product Increment level (that is the 1st level of iteration nodes, shown with a red border in the image above).
+
++++
 
     ![Configure the Categories](images/configureCats.png)
 
@@ -47,7 +54,8 @@ To configure the extension, you require a new custom field to store the list of 
     6. A slider appears for each category for the selected Product Increment. Adjust the values for that Product Increment and click Save. Ensure that the total adds up to 100. Repeat this step for each Product Increment.
 
 +++
-### Configure a Feature Work Item Query
+
+##### Configure a Feature Work Item Query
 
     To see how requirements are tracking against investment category, you need to configure a query that returns the requirement-level items (User Story, PBI or Requirement for Agile, Scrum and CMMI templates respectively). The query also needs to show all the parent Feature-level items. The reason the query is child-to-parent is so that orphaned requirements can "sum" to a `None` category. The query can of course filter work items to a particular area or anything you need, but it must have the child-parent items.
 
@@ -61,6 +69,11 @@ To configure the extension, you require a new custom field to store the list of 
     4. Click on the Editor
     5. Change the query type to `Work Item and direct links`
     6. Edit the top level query to be `Work Item Type = User Story` (User Story is for the Agile tamplate - use PBI or Requirement for Scrum or CMMI templates) to return requirement-level items. Optionally add other filters like Area Path or Iteration, as required.
+
++++
+
+    ![Configure the Categories](images/configureQuery.png)
+
     7. Edit the linked work items query to `Work Item Type = Feature` to return the parent items. These items are the items that have the Invesement Category field.
     8. Change the Filter Options value to `Return all top level items`
     9. Change Types of Links to `Return selected link types`
@@ -68,7 +81,7 @@ To configure the extension, you require a new custom field to store the list of 
 
 +++
 
-## Usage
+### Usage
 
     Edit a dashboard and add a new SAFe Investment Category Widget
 
@@ -76,7 +89,7 @@ To configure the extension, you require a new custom field to store the list of 
     
 +++ 
 
-### Click the wrench icon on the widget to configure it
+##### Click the wrench icon on the widget to configure it
     
     ![Configure the Widget](images/configureWidget.png)
     
